@@ -1,0 +1,55 @@
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "yqrashawn/goku"
+tap "aws/tap"
+
+##################
+
+
+cask "font-fira-code"
+
+brew "yqrashawn/goku/goku"
+cask "alfred"
+cask "karabiner-elements"
+cask "keyboard-maestro"
+cask "iterm2"
+cask "lulu"
+cask "transmission"
+cask "spotify"
+cask "onedrive"
+cask "kap"
+cask "keybase"
+cask "obs"
+cask "vlc"
+
+cask "notion"
+
+cask "visual-studio-code"
+
+cask "discord"
+cask "telegram-desktop"
+cask "slack"
+cask "zoomus"
+cask "loopback"
+cask "inkscape"
+
+###################
+
+# CLI
+
+brew "ag"
+brew "awscli"
+brew "aws-sam-cli"
+brew "bat"
+brew "cmake"
+brew "git"
+brew "ripgrep"
+brew "ispell"
+brew "coreutils"
+brew "fd"
+brew "neovim"
+brew "pyenv"
+brew "node"
+brew "openjdk"
+brew "haskell-stack"
+brew "z"     # Autojumping tool

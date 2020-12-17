@@ -1,3 +1,11 @@
-- clean: []
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
 - link: {}
-- shell: []
+
+- shell:
+    - [git submodule update --init --recursive, Updating submodules]
+    - [cd brew && brew bundle, Updating HomeBrew environment]

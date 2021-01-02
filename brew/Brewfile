@@ -21,6 +21,7 @@ cask "kap"
 cask "keybase"
 cask "obs"
 cask "vlc"
+# cask "1password" -- Install it from website
 
 cask "notion"
 

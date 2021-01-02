@@ -4,7 +4,9 @@
 
 - clean: ["~"]
 
-- link: {}
+- link:
+    ~/.config/karabiner.edn: karabiner/karabiner.edn
+    ~/.zshrc: zsh/zsh.sh
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]

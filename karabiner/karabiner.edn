@@ -435,7 +435,7 @@
      :rules [ :w-mode
        [:v [:km "open: VSCode"]]
        [:t [:km "open: iterm"]]
-       [:c [:km "open: Safari"]]
+       [:c [:km "open: Brave"]]
        [:m [:km "open: Keyboard Maestro"]]
        [:n [:km "open: Notion"]]
      ]}

@@ -6,6 +6,9 @@
 
 - link:
     ~/.config/karabiner.edn: karabiner/karabiner.edn
+    ~/.config/nvim/init.vim: neovim/init.vim
+    ~/.config/yabai: yabai
+    ~/.config/spacebar: spacebar
     ~/.zshrc: zsh/zsh.sh
 
 - shell:

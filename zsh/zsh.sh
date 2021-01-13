@@ -28,4 +28,4 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Aliases
-alias brew-reload='(cd ~/.dotfiles/homebrew && brew bundle)'
+alias brew-reload='(cd ~/.dotfiles/brew && brew bundle)'

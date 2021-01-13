@@ -42,7 +42,9 @@
 :templates {
 	  :alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
     :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+    :yabai "/usr/local/bin/yabai -m %s"
     :open "open \"%s\""
+    :shell "%s"
 } ;; templates
 
 ;; layers are basically "hyper" keys
@@ -72,6 +74,8 @@
   :g-mode {:key :g}
   :p-mode {:key :p}
   :q-mode {:key :q}
+  :r-mode {:key :r}
+  :e-mode {:key :e}
   :z-mode {:key :z}
   :y-mode {:key :y}
   :b-mode {:key :b}
@@ -109,7 +113,8 @@
      	 [[:home :home :nil {:alone :!Cup_arrow}]
      	  [:end :end :nil {:alone :!Cdown_arrow}]
      	  [:home :!Cleft_arrow]
-     	  [:end :!Cright_arrow]]}
+     	  [:end :!Cright_arrow]
+        [:!Ctab []]]}
 
     {:des "A to Shift"
    	 :rules [:a-mode
@@ -433,21 +438,21 @@
 
     {:des "W mode - Activate apps"
      :rules [ :w-mode
-       [:v [:km "open: VSCode"]]
-       [:t [:km "open: iterm"]]
-       [:c [:km "open: Brave"]]
-       [:m [:km "open: Keyboard Maestro"]]
-       [:n [:km "open: Notion"]]
+    ;    [:v [:km "open: VSCode"]]
+        [:t [:open "/Applications/iTerm.app"]]
+    ;    [:c [:km "open: Brave"]]
+    ;    [:m [:km "open: Keyboard Maestro"]]
+    ;    [:n [:km "open: Notion"]]
      ]}
 
 
-    {:des "Z mode - Chat and communication"
-     :rules [ :z-mode
-       [:l [:km "open: Slack"]]
-       [:d [:km "open: Discord"]]
-       [:t [:km "open: Telegram"]]
-       [:o [:km "open: Zoom"]]
-     ]}
+    ; {:des "Z mode - Chat and communication"
+    ;  :rules [ :z-mode
+    ;    [:l [:km "open: Slack"]]
+    ;    [:d [:km "open: Discord"]]
+    ;    [:t [:km "open: Telegram"]]
+    ;    [:o [:km "open: Zoom"]]
+    ;  ]}
 
     {:des "P mode - Lower accents"
      :rules [ :p-mode
@@ -516,7 +521,7 @@
 
     {:des "V mode - Multimedia"
      :rules [ :v-mode
-       [:s [:km "open: Spotify"]]
+      ;  [:s [:km "open: Spotify"]]
        [:n :volume_decrement]
        [:m :volume_increment]
        [:h :rewind]
@@ -575,6 +580,72 @@
        [:slash :5]
      ]}
 
+    {:des "Yabai"
+      :rules [ :r-mode
+        ; Move windows
+        [:h [:yabai "window --focus west"]]
+        [:j [:yabai "window --focus south"]]
+        [:k [:yabai "window --focus north"]]
+        [:l [:yabai "window --focus east"]]
+
+        ; Switch to workspaces
+        [:1 [:yabai "space --focus 1"]]
+        [:2 [:yabai "space --focus 2"]]
+        [:3 [:yabai "space --focus 3"]]
+        [:4 [:yabai "space --focus 4"]]
+        [:5 [:yabai "space --focus 5"]]
+        [:6 [:yabai "space --focus 6"]]
+        [:7 [:yabai "space --focus 7"]]
+        [:8 [:yabai "space --focus 8"]]
+        [:9 [:yabai "space --focus 9"]]
+
+        [:period [:yabai "space --focus next"]]
+        [:comma [:yabai "space --focus prev"]]
+
+        [:m [:yabai "display --focus next"]]
+        [:n [:yabai "display --focus prev"]]
+      ]}
+
+    {:des "Yabai (modded)"
+      :rules [ :e-mode
+        ; Navigation
+        [:h [:yabai "window --warp west"]]
+        [:j [:yabai "window --warp south"]]
+        [:k [:yabai "window --warp north"]]
+        [:l [:yabai "window --warp east"]]
+
+        ; Resizing
+        [:y [:yabai "window --resize right:-20:0"]]
+        [:u [:yabai "window --resize top:0:20"]]
+        [:i [:yabai "window --resize top:0:-20"]]
+        [:o [:yabai "window --resize right:20:0"]]
+
+        [:0 [:yabai "space --balance"]]
+        [:spacebar [:yabai "window --toggle float"]]
+        [:period [:yabai "space --rotate 90"]]
+        [:comma [:yabai "space --rotate 270"]]
+        [:z [:yabai "space --mirror x-axis"]]
+        [:x [:yabai "space --mirror y-axis"]]
+
+        ; Move to workspaces
+        [:1 [:yabai "window --space 1"]]
+        [:2 [:yabai "window --space 2"]]
+        [:3 [:yabai "window --space 3"]]
+        [:4 [:yabai "window --space 4"]]
+        [:5 [:yabai "window --space 5"]]
+        [:6 [:yabai "window --space 6"]]
+        [:7 [:yabai "window --space 7"]]
+        [:8 [:yabai "window --space 8"]]
+        [:9 [:yabai "window --space 9"]]
+
+        ; Restart Yabai
+        [:tab [:shell "launchctl kickstart -k \"gui/${UID}/homebrew.mxcl.yabai\""]]
+      ]}
+      {:des "Yabai (globals)"
+       :rules [
+         [:!CSOhyphen [:yabai "space --destroy"]]
+         [:!CSOequal_sign [:yabai "space --create"]]
+       ]}
 ] ;; main list
 
 }

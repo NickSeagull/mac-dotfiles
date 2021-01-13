@@ -2,11 +2,14 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "yqrashawn/goku"
 tap "aws/tap"
+tap "koekeishiya/formulae"
+tap "cmacrae/formulae"
 
 ##################
 
 
 cask "font-fira-code"
+cask "font-fontawesome"
 
 brew "yqrashawn/goku/goku"
 cask "alfred"
@@ -35,6 +38,13 @@ cask "loopback"
 cask "inkscape"
 
 ###################
+
+# Minimal environment
+
+brew "yabai"      # Tiling WM
+brew "skhd"       # Keyboard shortcut manager
+cask "ubersicht"  # Top bar
+brew "spacebar"
 
 # CLI
 

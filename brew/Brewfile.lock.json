@@ -170,6 +170,12 @@
         "options": {
           "full_name": "altair-graphql-client"
         }
+      },
+      "obsidian": {
+        "version": "0.10.7",
+        "options": {
+          "full_name": "obsidian"
+        }
       }
     },
     "brew": {

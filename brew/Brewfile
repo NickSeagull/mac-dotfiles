@@ -27,6 +27,7 @@ cask "vlc"
 # cask "1password" -- Install it from website
 
 cask "notion"
+cask "obsidian"
 
 cask "visual-studio-code"
 cask "altair-graphql-client"
@@ -37,15 +38,6 @@ cask "slack"
 cask "zoomus"
 cask "loopback"
 cask "inkscape"
-
-###################
-
-# Minimal environment
-
-brew "yabai"      # Tiling WM
-brew "skhd"       # Keyboard shortcut manager
-cask "ubersicht"  # Top bar
-brew "spacebar"
 
 # CLI
 

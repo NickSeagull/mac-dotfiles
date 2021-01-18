@@ -164,6 +164,12 @@
         "options": {
           "full_name": "font-fontawesome"
         }
+      },
+      "altair-graphql-client": {
+        "version": "3.0.0",
+        "options": {
+          "full_name": "altair-graphql-client"
+        }
       }
     },
     "brew": {

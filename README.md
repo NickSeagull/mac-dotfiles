@@ -15,7 +15,3 @@ brew install python
 /usr/local/bin/pip install neovim
 /usr/local/bin/pip install --upgrade neovim
 ```
-
-# Yabai
-
-Took [this post](https://dev.to/m4cs/creating-a-cleaner-macos-workspace-2e35) as reference

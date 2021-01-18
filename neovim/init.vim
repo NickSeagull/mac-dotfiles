@@ -62,6 +62,10 @@ call plug#end()
 
 set number relativenumber
 
+" CtrlP config
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+
 " UltiSnips config
 inoremap <silent><expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:UltiSnipsExpandTrigger="<tab>"

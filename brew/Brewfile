@@ -38,6 +38,7 @@ cask "slack"
 cask "zoomus"
 cask "loopback"
 cask "inkscape"
+cask "gimp"
 
 # CLI
 
@@ -46,6 +47,7 @@ brew "awscli"
 brew "aws-sam-cli"
 brew "bat"
 brew "cmake"
+brew "imagemagick"
 brew "git"
 brew "ripgrep"
 brew "ispell"

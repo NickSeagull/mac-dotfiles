@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:$HOME/.local/bin:${GOPATH}/bin:${GOROOT}/bin:$HOME/.emacs.d/bin:$HOME/.cabal/bin:$HOME/.bin:$HOME/.nimble/bin"
+export PATH="/usr/local/Cellar/emacs-plus@28/28.0.50/bin/:$PATH"
 export GOKU_EDN_CONFIG_FILE="$HOME/.dotfiles/karabiner/karabiner.edn"
 
 
@@ -34,3 +35,4 @@ if [ -e /Users/nick/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/nick/.nix
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -f "/Users/nick/.ghcup/env" ] && source "/Users/nick/.ghcup/env" # ghcup-env

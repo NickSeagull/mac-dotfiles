@@ -37,7 +37,7 @@ cask "telegram-desktop"
 cask "slack"
 cask "zoomus"
 cask "loopback"
-cask "inkscape"
+# cask "inkscape"
 cask "gimp"
 
 # CLI

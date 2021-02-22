@@ -51,6 +51,7 @@
 ;; or keys like z which are used less often
  :simlayers {;; Home row mods
              :a-mode {:key :a}
+             :c-mode {:key :c}
              :semicolon-mode {:key :semicolon}
              :s-mode {:key :s}
              :l-mode {:key :l}
@@ -61,7 +62,6 @@
 
              :x-mode {:key :x}
 
-             :c-mode {:key :c}
              :o-mode {:key :o}
              :w-mode {:key :w}
              :g-mode {:key :g}
@@ -463,12 +463,10 @@
                  [:t [:km "test"]]
                  [:s :!CTS4]]}
 
-        {:des "O mode - Open sites"
-         :rules [:o-mode]}
-
-        {:des "C mode - Commit repos"
+        {:des "C mode - Dotfiles control"
          :rules [:c-mode
-                 [:d [:km "commit: Dotfiles"]]]}
+                 [:k [:km "dotfiles: Commit"]]
+                 [:o [:km "dotfiles: Open"]]]}
 
         {:des "X mode - Vim emulation"
          :rules [:x-mode

@@ -60,7 +60,7 @@ brew "coreutils"
 brew "fd"
 brew "neovim"
 brew "pyenv"
-brew "node"
+brew "nvm"
 brew "openjdk"
 brew "haskell-stack"
 brew "z"     # Autojumping tool

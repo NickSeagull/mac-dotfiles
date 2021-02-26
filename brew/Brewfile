@@ -42,7 +42,6 @@ cask "loopback"
 cask "gimp"
 cask "brave-browser"
 cask "parsec"
-brew "emacs-plus"
 
 # CLI
 

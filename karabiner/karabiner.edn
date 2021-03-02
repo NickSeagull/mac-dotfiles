@@ -493,7 +493,8 @@
          :rules [:g-mode
                  [:p :!Cspacebar]
                  [:a [:alfred "aws" "com.ryankoval.awsconsoleservices"]]
-                 [:t [:alfred "translate" "com.xfslove.translate"]]]}
+                 [:t [:alfred "translate" "com.xfslove.translate"]]
+                 [:q [:alfred "clickup" "com.msk.clickup2.0"]]]}
 
         {:des "V mode - Multimedia"
          :rules [:v-mode

@@ -428,6 +428,7 @@
         {:des "W mode - Activate apps"
          :rules [:w-mode
                  [:v [:km "open: VSCode"]]
+                 [:p [:km "open: ClickUp"]]
                  [:t [:open "/Applications/iTerm.app"]]
                  [:c [:km "open: Brave"]]
                  [:m [:km "open: Keyboard Maestro"]]

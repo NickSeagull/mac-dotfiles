@@ -13,6 +13,7 @@ cask "font-fontawesome"
 
 brew "yqrashawn/goku/goku"
 cask "alfred"
+cask "clickup"
 cask "karabiner-elements"
 cask "keyboard-maestro"
 cask "iterm2"

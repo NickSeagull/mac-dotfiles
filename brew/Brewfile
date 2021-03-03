@@ -4,6 +4,7 @@ tap "yqrashawn/goku"
 tap "aws/tap"
 tap "koekeishiya/formulae"
 tap "cmacrae/formulae"
+tap "d12frosted/emacs-plus"
 
 ##################
 
@@ -30,6 +31,7 @@ cask "vlc"
 cask "notion"
 cask "obsidian"
 cask "krita"
+brew "emacs-plus"
 
 cask "visual-studio-code"
 cask "altair-graphql-client"

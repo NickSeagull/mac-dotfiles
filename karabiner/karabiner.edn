@@ -105,6 +105,12 @@
           [:home :!Cleft_arrow]
           [:end :!Cright_arrow]]}
 
+        {:des "No right shift"
+         :rules [[:right_shift :vk_none]]}
+
+        {:des "No left shift"
+         :rules [[:left_shift :vk_none]]}
+
         {:des "A to Shift"
          :rules [:a-mode
                  [:semicolon :!Ssemicolon]

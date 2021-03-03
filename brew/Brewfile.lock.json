@@ -18,6 +18,9 @@
       },
       "cmacrae/formulae": {
         "revision": "2817af56bfb50bbc9c699b4fccb50c4e1c056f9b"
+      },
+      "d12frosted/emacs-plus": {
+        "revision": "fb629ff1e1e9b343df521239f9e2e8e9b361767a"
       }
     },
     "cask": {

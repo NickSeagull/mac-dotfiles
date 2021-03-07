@@ -1,5 +1,7 @@
 let Map = https://prelude.dhall-lang.org/v15.0.0/Map/Type
 
+let Keys = ./karabiner-keys.dhall
+
 let ProfileConfig =
       { default : Bool
       , sim : Natural
@@ -10,7 +12,7 @@ let ProfileConfig =
 
 let Templates = Map Text Text
 
-let LayerBinding = < KeyBinding : Key >
+let LayerBinding = < KeyBinding : Keys.FromKey >
 
 let KarabinerConfig =
       { profiles : Map Text ProfileConfig, templates : Templates }

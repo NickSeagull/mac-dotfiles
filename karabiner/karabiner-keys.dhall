@@ -1,4 +1,4 @@
-let Key =
+let CommonKey =
       < CapsLock
       | LeftControl
       | LeftShift
@@ -92,28 +92,9 @@ let Key =
       | F18
       | F19
       | F20
-      | F21
-      | F22
-      | F23
-      | F24
-      | DisplayBrightnessDecrement
-      | DisplayBrightnessIncrement
-      | MissionControl
-      | Launchpad
-      | Dashboard
-      | IlluminationDecrement
-      | IlluminationIncrement
-      | Rewind
-      | PlayOrPause
-      | Fastforward
       | Mute
       | VolumeDecrement
       | VolumeIncrement
-      | Eject
-      | AppleDisplayBrightnessDecrement
-      | AppleDisplayBrightnessIncrement
-      | AppleTopCaseDisplayBrightnessDecrement
-      | AppleTopCaseDisplayBrightnessIncrement
       | KeypadNumLock
       | KeypadSlash
       | KeypadAsterisk
@@ -133,7 +114,6 @@ let Key =
       | KeypadPeriod
       | KeypadEqualSign
       | KeypadComma
-      | VkNone
       | PrintScreen
       | ScrollLock
       | Pause
@@ -141,6 +121,25 @@ let Key =
       | Application
       | Help
       | Power
+      | International1
+      | International3
+      | Lang1
+      | Lang2
+      | JapaneseEisuu
+      | JapaneseKana
+      | LeftAlt
+      | LeftGui
+      | RightAlt
+      | RightGui
+      | VolumeDown
+      | VolumeUp
+      >
+
+let KeyNotTo =
+      < F21
+      | F22
+      | F23
+      | F24
       | Execute
       | Menu
       | Select
@@ -151,17 +150,13 @@ let Key =
       | Copy
       | Paste
       | Find
-      | International1
       | International2
-      | International3
       | International4
       | International5
       | International6
       | International7
       | International8
       | International9
-      | Lang1
-      | Lang2
       | Lang3
       | Lang4
       | Lang5
@@ -169,8 +164,6 @@ let Key =
       | Lang7
       | Lang8
       | Lang9
-      | JapaneseEisuu
-      | JapaneseKana
       | JapanesePcNfer
       | JapanesePcXfer
       | JapanesePcKatakana
@@ -190,10 +183,25 @@ let Key =
       | ClearOrAgain
       | CrSelOrProps
       | ExSel
-      | LeftAlt
-      | LeftGui
-      | RightAlt
-      | RightGui
+      >
+
+let KeyNotFrom =
+      < DisplayBrightnessDecrement
+      | DisplayBrightnessIncrement
+      | MissionControl
+      | Launchpad
+      | Dashboard
+      | IlluminationDecrement
+      | IlluminationIncrement
+      | Rewind
+      | PlayOrPause
+      | Fastforward
+      | Eject
+      | AppleDisplayBrightnessDecrement
+      | AppleDisplayBrightnessIncrement
+      | AppleTopCaseDisplayBrightnessDecrement
+      | AppleTopCaseDisplayBrightnessIncrement
+      | VkNone
       | VkConsumerBrightnessDown
       | VkConsumerBrightnessUp
       | VkMissionControl
@@ -204,8 +212,10 @@ let Key =
       | VkConsumerPrevious
       | VkConsumerPlay
       | VkConsumerNet
-      | VolumeDown
-      | VolumeUp
       >
 
-in  Key
+let FromKey = < FromCommon : CommonKey | From : KeyNotTo >
+
+let ToKey = < ToCommon : CommonKey | To : KeyNotFrom >
+
+in  { FromKey, ToKey }

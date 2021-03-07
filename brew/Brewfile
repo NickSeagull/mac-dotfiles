@@ -73,3 +73,9 @@ brew "openjdk"
 brew "haskell-stack"
 brew "z"     # Autojumping tool
 brew "python@3.8"
+
+# Soup Machine Development
+brew "hidapi"
+brew "libusb"
+brew "rtmidi"
+brew "doxygen"

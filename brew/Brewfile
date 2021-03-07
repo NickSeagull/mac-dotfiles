@@ -75,7 +75,9 @@ brew "z"     # Autojumping tool
 brew "python@3.8"
 
 # Soup Machine Development
+tap "ArmMbed/homebrew-formulae"
 brew "hidapi"
 brew "libusb"
 brew "rtmidi"
 brew "doxygen"
+brew "arm-none-eabi-gcc"

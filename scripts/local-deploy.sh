@@ -1,7 +1,6 @@
 
 #!/bin/bash
 COLOR='\033[0;32m'
-​
 publish(){
   declare -a packages=("${!1}")
   #for path in "${packages[@]}"
@@ -21,7 +20,6 @@ publish(){
     cd ../..
   done
 }
-​
 STARTTIME=$(date +%s)
 lerna run clean
 lerna clean -y

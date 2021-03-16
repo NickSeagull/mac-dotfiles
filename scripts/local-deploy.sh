@@ -10,7 +10,6 @@ publish(){
   #  yarn --silent compile || exit
   #  cd ../..
   #done
-​
   for path in "${packages[@]}"
   do
     echo -e "${COLOR} ✨🧙✨ Doing some magic to publish $(basename "$path") $(tput sgr0)"
@@ -25,7 +24,6 @@ lerna run clean
 lerna clean -y
 lerna bootstrap
 lerna run compile
-​
 PACKAGES+=(./packages/framework-types)
 PACKAGES+=(./packages/framework-core)
 PACKAGES+=(./packages/framework-provider-aws)
@@ -38,9 +36,7 @@ PACKAGES+=(./packages/framework-provider-kubernetes-infrastructure)
 PACKAGES+=(./packages/rocket-static-sites-aws-infrastructure)
 PACKAGES+=(./packages/rocket-uploads3-store-event-aws-infrastructure)
 PACKAGES+=(./packages/cli)
-​
 publish PACKAGES[@]
-​
 echo -e "${COLOR} 🧨  Uninstalling the current Booster version $(tput sgr0)"
 npm uninstall -g @boostercloud/cli
 echo -e "${COLOR} 💾  Installing the local Booster version including your magic  $(tput sgr0)"

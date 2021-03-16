@@ -8,6 +8,7 @@
     ~/.config/karabiner.edn: karabiner/karabiner.edn
     ~/.zshrc: zsh/zsh.sh
     ~/.hushlogin: .hushlogin
+    ~/.scripts: scripts
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]

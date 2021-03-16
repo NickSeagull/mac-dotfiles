@@ -1018,6 +1018,33 @@
       "arm-none-eabi-gcc": {
         "version": "9-2019-q4-major",
         "bottle": false
+      },
+      "eksctl": {
+        "version": "0.40.0",
+        "bottle": {
+          "rebuild": 0,
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
+          "files": {
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/eksctl-0.40.0.arm64_big_sur.bottle.tar.gz",
+              "sha256": "dfa238228fb8dad5823e5935c2cf390a632fbec5d4d6fe9e528010bc1b981032"
+            },
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/eksctl-0.40.0.big_sur.bottle.tar.gz",
+              "sha256": "68e953223d6d57fc6bd2026b5c0ca2e835d9931681358c6bfecda4557b39cc05"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/eksctl-0.40.0.catalina.bottle.tar.gz",
+              "sha256": "c5ea78bc3fafae8f4f24e05c2ec262f343ae4e674b192f27ad34db1aef37491d"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/eksctl-0.40.0.mojave.bottle.tar.gz",
+              "sha256": "61128d694d6f9125badc49bc2aab868b27a895cf023cba08bd05931ef256f905"
+            }
+          }
+        }
       }
     }
   },
@@ -1027,9 +1054,9 @@
         "HOMEBREW_VERSION": "3.0.5",
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "e0d32cce445aae973d5bb796d6511b1d0ba1eab0",
-        "CLT": "12.4.0.0.1.1610135815",
-        "Xcode": "12.0",
-        "macOS": "11.2.2"
+        "CLT": "",
+        "Xcode": "",
+        "macOS": "11.2.3"
       }
     }
   }

@@ -32,6 +32,8 @@ prompt pure
 
 # Aliases
 alias brew-reload='(cd ~/.dotfiles/brew && brew bundle)'
+alias lverdaccio='verdaccio -c ~/.verdaccio.yaml'
+
 if [ -e /Users/nick/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/nick/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 export NVM_DIR="$HOME/.nvm"

@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "ee88ff9f7924c100f207f3d373a42fa63c4a6a70"
+        "revision": "62cb01f6d7310f19c7b62b632e7817d4bef77dcb"
       },
       "homebrew/cask-fonts": {
-        "revision": "2fd99c79288967e35a828d1d23f940456be31793"
+        "revision": "18730174d9a8c419d2cfb3b398b62112587e95bb"
       },
       "yqrashawn/goku": {
         "revision": "95c37f0614e22bc6b83e8011358d2d0ba91f42bd"
@@ -76,7 +76,7 @@
         }
       },
       "onedrive": {
-        "version": "20.169.0823.0006",
+        "version": "21.030.0211.0002",
         "options": {
           "full_name": "onedrive"
         }
@@ -190,7 +190,7 @@
         }
       },
       "brave-browser": {
-        "version": "89.1.21.76,121.76",
+        "version": "89.1.21.77,121.77",
         "options": {
           "full_name": "brave-browser"
         }
@@ -241,6 +241,12 @@
         "version": "4.1.4",
         "options": {
           "full_name": "lens"
+        }
+      },
+      "font-iosevka-ss14": {
+        "version": "5.0.8",
+        "options": {
+          "full_name": "font-iosevka-ss14"
         }
       }
     },
@@ -1165,9 +1171,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.6",
+        "HOMEBREW_VERSION": "3.0.7",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "f41216305863c06c3f147f2a3d6d8896b84216af",
+        "Homebrew/homebrew-core": "3c81322a5a405ee2e5eb79ab624ea7297aed7afb",
         "CLT": "",
         "Xcode": "",
         "macOS": "11.2.3"

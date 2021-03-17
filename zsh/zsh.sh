@@ -33,6 +33,7 @@ prompt pure
 # Aliases
 alias brew-reload='(cd ~/.dotfiles/brew && brew bundle)'
 alias lverdaccio='verdaccio -c ~/.verdaccio.yaml'
+alias lpm='npm --registry=http://localhost:4873'
 
 if [ -e /Users/nick/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/nick/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 

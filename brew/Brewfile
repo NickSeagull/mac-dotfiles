@@ -12,7 +12,7 @@ tap "d12frosted/emacs-plus"
 cask "font-fira-code"
 cask "font-fontawesome"
 cask "font-proggy-clean-tt-nerd-font"
-casl "font-iosevka-ss14"
+cask "font-iosevka-ss14"
 
 brew "yqrashawn/goku/goku"
 cask "alfred"

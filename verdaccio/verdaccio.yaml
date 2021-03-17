@@ -1,0 +1,24 @@
+storage: ./storage
+max_body_size: 100mb
+auth:
+  htpasswd:
+    file: ./htpasswd
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@boostercloud/*':
+    access: $all
+    publish: $all
+  '@*/*':
+    access: $all
+    publish: $all
+    proxy: npmjs
+    cache: false
+  '**':
+    access: $all
+    publish: $all
+    proxy: npmjs
+    cache: false
+logs:
+  - {type: stdout, format: pretty, level: http}

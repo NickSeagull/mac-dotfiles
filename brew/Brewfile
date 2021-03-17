@@ -12,6 +12,7 @@ tap "d12frosted/emacs-plus"
 cask "font-fira-code"
 cask "font-fontawesome"
 cask "font-proggy-clean-tt-nerd-font"
+casl "font-iosevka-ss14"
 
 brew "yqrashawn/goku/goku"
 cask "alfred"
@@ -56,6 +57,7 @@ brew "aws-iam-authenticator"
 brew "bat"
 brew "cmake"
 brew "eksctl"
+brew "helm@3"
 brew "imagemagick"
 cask "lens"
 brew "kubectl"
@@ -78,6 +80,7 @@ brew "openjdk"
 brew "haskell-stack"
 brew "z"     # Autojumping tool
 brew "python@3.8"
+brew "youtube-dl"
 
 # Soup Machine Development
 tap "ArmMbed/homebrew-formulae"

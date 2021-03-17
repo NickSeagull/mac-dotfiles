@@ -9,6 +9,7 @@
     ~/.zshrc: zsh/zsh.sh
     ~/.hushlogin: .hushlogin
     ~/.scripts: scripts
+    ~/.verdaccio.yaml: verdaccio/verdaccio.yaml
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]

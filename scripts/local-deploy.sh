@@ -34,7 +34,7 @@ echo -e "${COLOR} 🧨  Uninstalling the current Booster version $(tput sgr0)"
 npm uninstall -g @boostercloud/cli
 echo -e "${COLOR} 💾  Installing the local Booster version including your magic  $(tput sgr0)"
 npm install -g @boostercloud/cli
-npm config set registry https://registry.npmjs.org
+#npm config set registry https://registry.npmjs.org
 
 ENDTIME=$(date +%s)
 

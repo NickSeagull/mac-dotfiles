@@ -499,6 +499,7 @@
         {:des "G mode - Alfred"
          :rules [:g-mode
                  [:p :!Cspacebar]
+                 [:0 [:alfred "microsoft-todo" "com.johandebeurs.alfred.mstodo"]]
                  [:a [:alfred "aws" "com.ryankoval.awsconsoleservices"]]
                  [:t [:alfred "translate" "com.xfslove.translate"]]
                  [:q [:alfred "clickup" "com.msk.clickup2.0"]]]}

@@ -248,6 +248,12 @@
         "options": {
           "full_name": "font-iosevka-ss14"
         }
+      },
+      "microsoft-edge": {
+        "version": "89.0.774.54",
+        "options": {
+          "full_name": "microsoft-edge"
+        }
       }
     },
     "brew": {

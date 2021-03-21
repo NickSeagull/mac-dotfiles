@@ -16,7 +16,7 @@ cask "font-iosevka-ss14"
 
 brew "yqrashawn/goku/goku"
 cask "alfred"
-cask "clickup"
+cask "microsoft-outlook"
 cask "karabiner-elements"
 cask "keyboard-maestro"
 cask "iterm2"
@@ -28,6 +28,7 @@ cask "kap"
 cask "keybase"
 cask "obs"
 cask "vlc"
+cask "webtorrent"
 # cask "1password" -- Install it from website
 
 cask "notion"
@@ -45,7 +46,8 @@ cask "zoom"
 cask "loopback"
 # cask "inkscape"
 cask "gimp"
-cask "brave-browser"
+# cask "brave-browser"
+cask "microsoft-edge"
 cask "parsec"
 
 # CLI

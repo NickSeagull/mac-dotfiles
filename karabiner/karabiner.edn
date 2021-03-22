@@ -434,11 +434,11 @@
         {:des "W mode - Activate apps"
          :rules [:w-mode
                  [:v [:km "open: VSCode"]]
-                 [:p [:km "open: ClickUp"]]
+                 [:p [:km "open: To Do"]]
                  [:t [:open "/Applications/iTerm.app"]]
                  [:c [:km "open: Brave"]]
                  [:m [:km "open: Keyboard Maestro"]]
-                 [:n [:km "open: Notion"]]]}
+                 [:n [:km "open: OneNote"]]]}
 
         {:des "Z mode - Chat and communication"
          :rules [:z-mode

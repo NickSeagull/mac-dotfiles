@@ -54,6 +54,7 @@ cask "parsec"
 
 brew "ag"
 brew "awscli"
+brew "azure-cli"
 brew "aws-sam-cli"
 brew "aws-iam-authenticator"
 brew "bat"

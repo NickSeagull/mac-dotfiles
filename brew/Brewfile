@@ -46,7 +46,7 @@ cask "zoom"
 cask "loopback"
 # cask "inkscape"
 cask "gimp"
-# cask "brave-browser"
+cask "loom"
 cask "microsoft-edge"
 cask "parsec"
 

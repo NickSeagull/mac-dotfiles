@@ -50,6 +50,7 @@ cask "loom"
 cask "microsoft-edge"
 cask "parsec"
 cask "splashtop-personal"
+cask "splashtop-streamer"
 
 # CLI
 

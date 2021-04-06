@@ -272,6 +272,12 @@
         "options": {
           "full_name": "loom"
         }
+      },
+      "splashtop-personal": {
+        "version": "3.4.0.1",
+        "options": {
+          "full_name": "splashtop-personal"
+        }
       }
     },
     "brew": {

@@ -278,6 +278,12 @@
         "options": {
           "full_name": "splashtop-personal"
         }
+      },
+      "splashtop-streamer": {
+        "version": "3.4.2.0",
+        "options": {
+          "full_name": "splashtop-streamer"
+        }
       }
     },
     "brew": {

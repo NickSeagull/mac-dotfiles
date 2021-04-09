@@ -233,6 +233,7 @@
         {:des "F to Cmd"
          :rules [:f-mode
                  [:semicolon :!Csemicolon]
+                 [:tab :!Ctab]
                  [:1 :!C1]
                  [:2 :!C2]
                  [:3 :!C3]
@@ -391,6 +392,7 @@
         {:des "J to Cmd"
          :rules [:j-mode
                  [:semicolon :!Csemicolon]
+                 [:tab :!Ctab]
                  [:1 :!T1]
                  [:2 :!T2]
                  [:3 :!T3]

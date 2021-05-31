@@ -1,6 +1,7 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "yqrashawn/goku"
+tap "candid82/brew"
 tap "aws/tap"
 tap "koekeishiya/formulae"
 tap "cmacrae/formulae"
@@ -39,6 +40,7 @@ cask "zoom"
 cask "loopback"
 # cask "inkscape"
 cask "loom"
+cask "skitch"
 
 # CLI
 

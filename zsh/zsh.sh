@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.local/bin:${GOPATH}/bin:${GOROOT}/bin:$HOME/.emacs.d/bin:$HOME/.cabal/bin:$HOME/.bin:$HOME/.nimble/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.bin:$HOME/.nimble/bin"
 export PATH="/usr/local/Cellar/emacs-plus@28/28.0.50/bin/:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.scripts:$PATH"
@@ -31,15 +31,12 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Aliases
-alias brew-reload='(cd ~/.dotfiles/brew && brew bundle)'
 alias lverdaccio='verdaccio -c ~/.verdaccio.yaml'
 alias lpm='npm --registry=http://localhost:4873'
+alias brs='brew search'
+alias brbu='brew bundle install --cleanup --file ~/.dotfiles/brew/Brewfile'
+alias rezsh='source ~/.zshrc && echo ".zshrc reloaded!"'
 
-if [ -e /Users/nick/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/nick/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
-
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-[ -f "/Users/nick/.ghcup/env" ] && source "/Users/nick/.ghcup/env" # ghcup-env

@@ -10,9 +10,6 @@ tap "d12frosted/emacs-plus"
 
 
 cask "font-fira-code"
-cask "font-fontawesome"
-cask "font-proggy-clean-tt-nerd-font"
-cask "font-iosevka-ss14"
 
 brew "yqrashawn/goku/goku"
 cask "alfred"
@@ -20,7 +17,6 @@ cask "microsoft-outlook"
 cask "karabiner-elements"
 cask "keyboard-maestro"
 cask "iterm2"
-cask "lulu"
 cask "transmission"
 cask "spotify"
 cask "onedrive"
@@ -28,13 +24,10 @@ cask "kap"
 cask "keybase"
 cask "obs"
 cask "vlc"
-cask "webtorrent"
 # cask "1password" -- Install it from website
+cask "brave-browser"
 
 cask "notion"
-cask "obsidian"
-cask "krita"
-brew "emacs-plus"
 
 cask "visual-studio-code"
 cask "altair-graphql-client"
@@ -45,27 +38,14 @@ cask "slack"
 cask "zoom"
 cask "loopback"
 # cask "inkscape"
-cask "gimp"
 cask "loom"
-cask "microsoft-edge"
-cask "parsec"
-cask "splashtop-personal"
-cask "splashtop-streamer"
 
 # CLI
 
 brew "ag"
 brew "awscli"
-brew "azure-cli"
 brew "aws-sam-cli"
 brew "aws-iam-authenticator"
-brew "bat"
-brew "cmake"
-brew "eksctl"
-brew "helm@3"
-brew "imagemagick"
-cask "lens"
-brew "kubectl"
 brew "dhall"
 brew "dhall-bash"
 brew "dhall-json"
@@ -86,6 +66,7 @@ brew "haskell-stack"
 brew "z"     # Autojumping tool
 brew "python@3.8"
 brew "youtube-dl"
+brew "tesseract"  # OCR
 
 # Soup Machine Development
 tap "ArmMbed/homebrew-formulae"

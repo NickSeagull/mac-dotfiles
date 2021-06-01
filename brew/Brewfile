@@ -42,6 +42,7 @@ cask "loopback"
 cask "loom"
 cask "skitch"
 cask "windscribe"
+cask "whatsapp"
 
 # CLI
 

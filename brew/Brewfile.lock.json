@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "6107e05ba6845d679f63ff83cedde010782bfde4"
+        "revision": "d4382a397d6d53562289751240b13012b459de62"
       },
       "homebrew/cask-fonts": {
-        "revision": "8e58e47f2ab8769da3257bcb1e65e0e4a71787c3"
+        "revision": "5c918b66727ae4303382d84847f6c938a1089911"
       },
       "yqrashawn/goku": {
         "revision": "9ade29f72a8624ff252e6b827a8505579e6944b9"
@@ -298,6 +298,12 @@
         "version": "2.02.10",
         "options": {
           "full_name": "windscribe"
+        }
+      },
+      "whatsapp": {
+        "version": "2.2119.6",
+        "options": {
+          "full_name": "whatsapp"
         }
       }
     },
@@ -1345,7 +1351,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.1.9",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "1e994c3f75c1035a436195e4a8d5efc8a68df353",
+        "Homebrew/homebrew-core": "733ded468637ecd19b5acef52699d2918452dbe1",
         "CLT": "12.5.0.0.1.1617976050",
         "Xcode": "12.5",
         "macOS": "11.3.1"

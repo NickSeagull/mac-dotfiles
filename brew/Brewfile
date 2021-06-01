@@ -25,7 +25,7 @@ cask "kap"
 cask "keybase"
 cask "obs"
 cask "vlc"
-# cask "1password" -- Install it from website
+cask "1password"
 cask "brave-browser"
 
 cask "notion"
@@ -41,6 +41,7 @@ cask "loopback"
 # cask "inkscape"
 cask "loom"
 cask "skitch"
+cask "windscribe"
 
 # CLI
 

@@ -11,7 +11,7 @@
         "revision": "9ade29f72a8624ff252e6b827a8505579e6944b9"
       },
       "aws/tap": {
-        "revision": "8d269d15b601f4332c78afa7c4669b8398f65d2c"
+        "revision": "236147ca1af6d91512982aaa9c70966712aebcc8"
       },
       "koekeishiya/formulae": {
         "revision": "14013bd892497b9aa9f67ddab993d1fc61691fb9"
@@ -157,7 +157,7 @@
         }
       },
       "1password": {
-        "version": "7.7",
+        "version": "7.8.4",
         "options": {
           "full_name": "1password"
         }
@@ -292,6 +292,12 @@
         "version": "2.9,265157",
         "options": {
           "full_name": "skitch"
+        }
+      },
+      "windscribe": {
+        "version": "2.02.10",
+        "options": {
+          "full_name": "windscribe"
         }
       }
     },

@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "3021d92f970faa43e9c16f9ad71786eb746e82cd"
+        "revision": "78d981fb8eb4f228ab74c064ef32b04d41e503c9"
       },
       "homebrew/cask-fonts": {
         "revision": "d29ef2e6ac83f75847a9a863f6042756795d8865"
@@ -310,6 +310,12 @@
         "version": "3.0.3",
         "options": {
           "full_name": "selfcontrol"
+        }
+      },
+      "rescuetime": {
+        "version": "2.16.6.1",
+        "options": {
+          "full_name": "rescuetime"
         }
       }
     },
@@ -1357,7 +1363,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.1.9",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "07514f9b227d87cab193c946f50917c76a9ffe02",
+        "Homebrew/homebrew-core": "261cfb9fa6e3b5b4f1eeb25ee3c8388f14493aa0",
         "CLT": "12.5.0.0.1.1617976050",
         "Xcode": "12.5",
         "macOS": "11.3.1"

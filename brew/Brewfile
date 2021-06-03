@@ -44,6 +44,7 @@ cask "skitch"
 cask "windscribe"
 cask "whatsapp"
 cask "selfcontrol"
+cask "rescuetime"
 
 # CLI
 

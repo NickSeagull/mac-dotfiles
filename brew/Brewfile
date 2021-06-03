@@ -43,6 +43,7 @@ cask "loom"
 cask "skitch"
 cask "windscribe"
 cask "whatsapp"
+cask "selfcontrol"
 
 # CLI
 
@@ -71,6 +72,7 @@ brew "z"     # Autojumping tool
 brew "python@3.8"
 brew "youtube-dl"
 brew "tesseract"  # OCR
+brew "lerna"
 
 # Soup Machine Development
 tap "ArmMbed/homebrew-formulae"

@@ -31,7 +31,6 @@ cask "brave-browser"
 cask "notion"
 
 cask "visual-studio-code"
-cask "altair-graphql-client"
 
 cask "discord"
 cask "telegram-desktop"

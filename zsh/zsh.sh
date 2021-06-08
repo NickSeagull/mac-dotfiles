@@ -34,7 +34,8 @@ prompt pure
 alias lverdaccio='verdaccio -c ~/.verdaccio.yaml'
 alias lpm='npm --registry=http://localhost:4873'
 alias brs='brew search'
-alias brbu='brew bundle install --cleanup --file ~/.dotfiles/brew/Brewfile'
+# alias brbu='brew bundle install --cleanup --file ~/.dotfiles/brew/Brewfile'
+alias brbu='brew bundle install --file ~/.dotfiles/brew/Brewfile'
 alias rezsh='source ~/.zshrc && echo ".zshrc reloaded!"'
 
 

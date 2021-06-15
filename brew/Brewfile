@@ -73,7 +73,7 @@ brew "z"     # Autojumping tool
 brew "python@3.8"
 brew "youtube-dl"
 brew "tesseract"  # OCR
-brew "vlang"
+# brew "vlang"
 
 # Soup Machine Development
 tap "ArmMbed/homebrew-formulae"

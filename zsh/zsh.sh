@@ -41,3 +41,4 @@ alias rezsh='source ~/.zshrc && echo ".zshrc reloaded!"'
 
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh
+if [ -e /Users/nick/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/nick/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

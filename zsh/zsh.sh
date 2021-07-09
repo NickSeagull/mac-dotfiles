@@ -21,6 +21,7 @@ plugins=(
   z
   colored-man-pages
   cp
+  deno
 )
 
 source $ZSH/oh-my-zsh.sh

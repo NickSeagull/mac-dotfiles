@@ -74,6 +74,7 @@ brew "python@3.8"
 brew "youtube-dl"
 brew "tesseract"  # OCR
 # brew "vlang"
+brew "deno"
 
 # Soup Machine Development
 tap "ArmMbed/homebrew-formulae"

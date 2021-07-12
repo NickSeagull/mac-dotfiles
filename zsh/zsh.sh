@@ -31,6 +31,9 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
+# Needed for BOOST C++ libraries
+export DYLD_LIBRARY_PATH=/usr/local/boost-1.68.0/lib:$DYLD_LIBRARY_PATH
+
 # Aliases
 alias lverdaccio='verdaccio -c ~/.verdaccio.yaml'
 alias lpm='npm --registry=http://localhost:4873'

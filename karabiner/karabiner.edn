@@ -519,6 +519,7 @@
          :rules [:b-mode
                  [:n [:km "window: Center"]]
                  [:p [:km "window: Send to next"]]
+                 [:m [:km "window: Maximize"]]
                  [:y [:km "window: Resize -X"]]
                  [:u [:km "window: Resize -Y"]]
                  [:i [:km "window: Resize +Y"]]

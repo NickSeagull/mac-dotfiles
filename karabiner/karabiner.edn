@@ -431,7 +431,7 @@
                  [:m :!Cm]]}
 
         {:des "Caps to Esc or Hyper"
-         :rules [[:##caps_lock :!CTOleft_shift nil {:alone :escape}]]}
+         :rules [[:##caps_lock :f18]]}
 
         {:des "W mode - Activate apps"
          :rules [:w-mode
@@ -519,7 +519,6 @@
          :rules [:b-mode
                  [:n [:km "window: Center"]]
                  [:p [:km "window: Send to next"]]
-                 [:m [:km "window: Maximize"]]
                  [:y [:km "window: Resize -X"]]
                  [:u [:km "window: Resize -Y"]]
                  [:i [:km "window: Resize +Y"]]

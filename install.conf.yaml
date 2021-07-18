@@ -10,6 +10,7 @@
     ~/.hushlogin: .hushlogin
     ~/.scripts: scripts
     ~/.verdaccio.yaml: verdaccio/verdaccio.yaml
+    ~/.hammerspoon: hammerspoon
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]

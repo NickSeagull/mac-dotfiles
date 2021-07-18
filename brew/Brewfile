@@ -5,81 +5,99 @@ tap "candid82/brew"
 tap "aws/tap"
 tap "koekeishiya/formulae"
 tap "cmacrae/formulae"
-tap "d12frosted/emacs-plus"
+
+
 
 ##################
-
-
-cask "font-fira-code"
-
-brew "yqrashawn/goku/goku"
-cask "alfred"
-cask "microsoft-outlook"
-cask "karabiner-elements"
-cask "keyboard-maestro"
-cask "iterm2"
-cask "transmission"
+#                #
+# NON-FREE       #
+#                #
+##################
 cask "spotify"
-cask "onedrive"
-cask "kap"
-cask "keybase"
-cask "obs"
-cask "vlc"
 cask "1password"
-cask "brave-browser"
-
-cask "notion"
-
 cask "visual-studio-code"
-cask "altair-graphql-client"
-
 cask "discord"
 cask "telegram-desktop"
 cask "slack"
 cask "zoom"
 cask "loopback"
-# cask "inkscape"
 cask "loom"
 cask "skitch"
-cask "windscribe"
-cask "whatsapp"
+cask "parsec"
+
+
+
+##################
+#                #
+# WINDOW MGMT    #
+#                #
+##################
+brew "yqrashawn/goku/goku"
+cask "karabiner-elements"
+cask "hammerspoon"
+
+
+
+##################
+#                #
+# MULTIMEDIA     #
+#                #
+##################
+cask "obs"
+cask "vlc"
+cask "brave-browser"
 cask "selfcontrol"
-cask "rescuetime"
 
-# CLI
 
-brew "ag"
-brew "awscli"
-brew "aws-sam-cli"
-brew "aws-iam-authenticator"
-brew "dhall"
-brew "dhall-bash"
-brew "dhall-json"
-brew "dhall-yaml"
-brew "dhall-lsp-server"
+
+##################
+#                #
+# USEFUL APPS    #
+#                #
+##################
+
+# Term emulator
+cask "iterm2"
+
+# Git + LFS
 brew "git"
 brew "git-lfs"
-brew "graphviz"
-brew "ripgrep"
-brew "ispell"
-brew "coreutils"
-brew "fd"
-brew "neovim"
-brew "pyenv"
-brew "nvm"
-brew "openjdk"
-brew "haskell-stack"
-brew "z"     # Autojumping tool
-brew "python@3.8"
-brew "youtube-dl"
-brew "tesseract"  # OCR
-# brew "vlang"
-brew "deno"
 
-# Soup Machine Development
-tap "ArmMbed/homebrew-formulae"
-brew "hidapi"
-brew "libusb"
-brew "rtmidi"
-brew "doxygen"
-brew "arm-none-eabi-gcc"
+# The Silver Searcher
+brew "ag"
+
+# Like find | grep, but better
+brew "ripgrep"
+
+# GNU Utils for MacOS
+brew "coreutils"
+
+# Hyperextensible Vim-based text editor
+brew "neovim"
+
+# Autojumping tool
+brew "z"
+
+# OCR
+brew "tesseract"
+
+
+
+
+##################
+#                #
+# BOOSTER DEV    #
+#                #
+##################
+brew "awscli"
+cask "insomnia"
+
+
+
+##################
+#                #
+# PROG LANGS     #
+#                #
+##################
+brew "nvm"
+brew "python@3.8"

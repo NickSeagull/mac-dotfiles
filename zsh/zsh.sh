@@ -50,6 +50,7 @@ alias edf='edit_dots README.md'
 alias ebr='edit_dots brew/Brewfile'
 alias erc='edit_dots zsh/zsh.sh && rezsh'
 alias einit='edit_dots neovim/init.lua'
+alias tm='tmux new-session -s ide || tmux attach-session -t ide'
 
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh

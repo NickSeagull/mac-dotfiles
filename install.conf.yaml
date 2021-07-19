@@ -12,6 +12,7 @@
     ~/.verdaccio.yaml: verdaccio/verdaccio.yaml
     ~/.hammerspoon: hammerspoon
     ~/.config/nvim: neovim
+    ~/.tmux.conf: tmux/tmux.conf
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]

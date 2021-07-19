@@ -65,7 +65,7 @@ opt.wrap = false                    -- Disable line wrap
 -- highlight yanked text disabled in visual mode
 cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
 -- show a lightbulb if a code action is available at the current cursor position
-vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
+cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
 
 
 
@@ -93,6 +93,9 @@ map('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<Tab>"', {expr = true})
 map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {expr = true})
 
 map('n', '<C-l>', '<cmd>noh<CR>')    -- Clear highlights
+
+cmd('nnoremap <expr> <C-p> (len(system(\'git rev-parse\')) ? \':Files\' : \':GFiles --exclude-standard --others --cached\')."\\<cr>"')
+
 
 
 ----------------------------------------

@@ -32,6 +32,11 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
+edit_dots(){
+  
+  (cd $HOME/.dotfiles && ${EDITOR} "$HOME/.dotfiles/$1")
+}
+
 # Aliases
 alias lverdaccio='verdaccio -c ~/.verdaccio.yaml'
 alias lpm='npm --registry=http://localhost:4873'
@@ -39,8 +44,11 @@ alias brs='brew search'
 # alias brbu='brew bundle install --cleanup --file ~/.dotfiles/brew/Brewfile'
 alias brbu='brew bundle install --file ~/.dotfiles/brew/Brewfile'
 alias rezsh='source ~/.zshrc && echo ".zshrc reloaded!"'
+alias gdf='(cd $HOME/.dotfiles && git add . && git commit -m Update && git push)'
 alias e="${EDITOR}"
-alias edf="${EDITOR} ${HOME}/.dotfiles/README.md"
+alias edf='edit_dots README.md'
+alias erc='edit_dots zsh/zsh.sh && rezsh'
+alias einit='edit_dots neovim/init.lua'
 
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh

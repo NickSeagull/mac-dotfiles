@@ -18,14 +18,15 @@ local opt = vim.opt  -- to set options
 require "paq" {
     -- Let Paq manage itself
     "savq/paq-nvim";
-
+    'haishanh/night-owl.vim';
     "neovim/nvim-lspconfig";
     "hrsh7th/nvim-compe";
-
+    "tpope/vim-fugitive";
+    'blackcauldron7/surround.nvim';
     'nvim-lua/plenary.nvim';
     'jose-elias-alvarez/null-ls.nvim';
+    'jose-elias-alvarez/nvim-lsp-ts-utils';
     'kosayoda/nvim-lightbulb';
-    "lukas-reineke/indent-blankline.nvim";
     'lewis6991/gitsigns.nvim';
     {'shougo/deoplete-lsp'};
     {'shougo/deoplete.nvim', run = fn['remote#host#UpdateRemotePlugins']};
@@ -42,6 +43,7 @@ require "paq" {
 --         EDITOR GENERAL CFG         --
 --                                    --
 ----------------------------------------
+cmd 'colorscheme night-owl'
 opt.completeopt = {'menuone', 'noinsert', 'noselect'}  -- Completion options (for deoplete)
 opt.expandtab = true                -- Use spaces instead of tabs
 opt.hidden = true                   -- Enable background buffers
@@ -66,7 +68,8 @@ opt.wrap = false                    -- Disable line wrap
 cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
 -- show a lightbulb if a code action is available at the current cursor position
 cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
-
+g['deoplete#enable_at_startup'] = 1
+require "surround".setup{}
 
 
 

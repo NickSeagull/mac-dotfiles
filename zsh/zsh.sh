@@ -47,6 +47,7 @@ alias rezsh='source ~/.zshrc && echo ".zshrc reloaded!"'
 alias gdf='(cd $HOME/.dotfiles && git add . && git commit -m Update && git push)'
 alias e="${EDITOR}"
 alias edf='edit_dots README.md'
+alias ebr='edit_dots brew/Brewfile'
 alias erc='edit_dots zsh/zsh.sh && rezsh'
 alias einit='edit_dots neovim/init.lua'
 

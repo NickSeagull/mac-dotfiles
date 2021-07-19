@@ -29,6 +29,16 @@ cask "parsec"
 
 ##################
 #                #
+# FONTS          #
+#                #
+##################
+cask "font-gohufont-nerd-font"
+cask "font-terminus"
+
+
+
+##################
+#                #
 # WINDOW MGMT    #
 #                #
 ##################
@@ -66,6 +76,9 @@ brew "git-lfs"
 # The Silver Searcher
 brew "ag"
 
+# TMUX terminal multiplexer
+brew "tmux"
+
 # Like find | grep, but better
 brew "ripgrep"
 
@@ -81,6 +94,8 @@ brew "z"
 # OCR
 brew "tesseract"
 
+# Fuzzy Finder, used in Neovim
+brew "fzf"
 
 
 

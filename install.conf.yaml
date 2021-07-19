@@ -11,6 +11,7 @@
     ~/.scripts: scripts
     ~/.verdaccio.yaml: verdaccio/verdaccio.yaml
     ~/.hammerspoon: hammerspoon
+    ~/.config/nvim: neovim
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]

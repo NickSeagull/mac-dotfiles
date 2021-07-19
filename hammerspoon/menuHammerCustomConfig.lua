@@ -49,6 +49,9 @@ menuHammerMenuList = {
           {cons.cat.action, '', 'S', "Slack", {
                 {cons.act.launcher, 'Slack'}
           }},
+          {cons.cat.action, '', 'P', "Spotify", {
+                {cons.act.launcher, 'Spotify'}
+          }},
       }
   },
 

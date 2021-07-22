@@ -95,8 +95,8 @@
     ;; (custom variables) & modifiers -> Advanced
     ;; https://github.com/yqrashawn/GokuRakuJoudo/blob/master/examples.org#custom-variable
 
-    ;{:des "A to Shift"
-    ; :rules [[:##a :left_shift nil {:alone :a}]]}
+    {:des "Caps to F18, or Esc alone"
+     :rules [[:##caps_lock :!CTOleft_shift nil {:alone :escape}]]}
 
         {:des "Global rebinds"
          :rules
@@ -429,9 +429,6 @@
                  [:b :!Cb]
                  [:n :!Cn]
                  [:m :!Cm]]}
-
-        {:des "Caps to Esc or Hyper"
-         :rules [[:##caps_lock :f18]]}
 
         {:des "W mode - Activate apps"
          :rules [:w-mode

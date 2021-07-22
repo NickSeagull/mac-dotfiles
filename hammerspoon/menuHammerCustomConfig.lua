@@ -12,6 +12,9 @@ menuHammerMenuList = {
           {cons.cat.submenu, '', 'W', 'Window Management', {
                 {cons.act.menu, "menu_window"}
           }},
+          {cons.cat.submenu, '', 'V', 'Multimedia', {
+                {cons.act.menu, "menu_volume"}
+          }},
           {cons.cat.action, '', 'T', "Terminal", {
                 {cons.act.launcher, 'Terminal'}
           }},
@@ -52,6 +55,9 @@ menuHammerMenuList = {
           {cons.cat.action, '', 'P', "Spotify", {
                 {cons.act.launcher, 'Spotify'}
           }},
+          {cons.cat.action, '', 'T', "iTerm", {
+                {cons.act.launcher, 'iTerm'}
+          }},
       }
   },
 
@@ -70,6 +76,23 @@ menuHammerMenuList = {
     }
   },
 
+  menu_volume = {
+    parentMenu = "mainMenu",
+    menuHotkey = nil,
+    menuItems = {
+      {cons.cat.action, '', 'J', 'Mute', {
+          {cons.act.mediakey, "mute"}
+      }},
+      {cons.cat.action, '', 'M', "Volume Up", {
+          {cons.act.mediakey, "adjustVolume", 10}},
+      true,
+      },
+      {cons.cat.action, '', 'N', "Volume Down", {
+          {cons.act.mediakey, "adjustVolume", -10}},
+      true,
+      },
+    }
+  },
   menu_window = {
     parentMenu = "mainMenu",
     menuHotkey = nil,

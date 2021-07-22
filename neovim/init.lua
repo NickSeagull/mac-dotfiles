@@ -22,19 +22,27 @@ require "paq" {
     "neovim/nvim-lspconfig";
     "hrsh7th/nvim-compe";
     "tpope/vim-fugitive";
-    'blackcauldron7/surround.nvim';
+    'tpope/vim-surround';
     'nvim-lua/plenary.nvim';
     'jose-elias-alvarez/null-ls.nvim';
     'jose-elias-alvarez/nvim-lsp-ts-utils';
     'kosayoda/nvim-lightbulb';
     'lewis6991/gitsigns.nvim';
-    {'shougo/deoplete-lsp'};
-    {'shougo/deoplete.nvim', run = fn['remote#host#UpdateRemotePlugins']};
+    'idanarye/vim-merginal';
     {'neovim/nvim-lspconfig'};
     {'junegunn/fzf', run = fn['fzf#install']};
     {'junegunn/fzf.vim'};
     {'ojroques/nvim-lspfuzzy'};
+    "justinmk/vim-sneak";
+    { "neoclide/coc.nvim", branch = 'release' };
+    'tribela/vim-transparent';
+    'christoomey/vim-tmux-navigator';
+    'terrortylor/nvim-comment';
+    'preservim/nerdtree';
+    'ryanoasis/vim-devicons'; -- Always load this as the last one
 }
+require('nvim_comment').setup()
+
 
 
 
@@ -44,7 +52,6 @@ require "paq" {
 --                                    --
 ----------------------------------------
 cmd 'colorscheme night-owl'
-opt.completeopt = {'menuone', 'noinsert', 'noselect'}  -- Completion options (for deoplete)
 opt.expandtab = true                -- Use spaces instead of tabs
 opt.hidden = true                   -- Enable background buffers
 opt.ignorecase = true               -- Ignore case
@@ -68,8 +75,8 @@ opt.wrap = false                    -- Disable line wrap
 cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
 -- show a lightbulb if a code action is available at the current cursor position
 cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
-g['deoplete#enable_at_startup'] = 1
-require "surround".setup{}
+g['sneak#label'] = 1
+cmd 'let mapleader = " "'
 
 
 
@@ -87,6 +94,14 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+-- The function is called `t` for `termcodes`.
+-- You don't have to call it that, but I find the terseness convenient
+local function t(str)
+    -- Adjust boolean arguments as needed
+    return vim.api.nvim_replace_termcodes(str, true, true, true)
+end
+
+
 map('', '<leader>c', '"+y')       -- Copy to clipboard in normal, visual, select and operator modes
 map('i', '<C-u>', '<C-g>u<C-u>')  -- Make <C-u> undo-friendly
 map('i', '<C-w>', '<C-g>u<C-w>')  -- Make <C-w> undo-friendly
@@ -98,6 +113,7 @@ map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {expr = true})
 map('n', '<C-l>', '<cmd>noh<CR>')    -- Clear highlights
 
 cmd('nnoremap <expr> <C-p> (len(system(\'git rev-parse\')) ? \':Files\' : \':GFiles --exclude-standard --others --cached\')."\\<cr>"')
+map('', '<C-o>', '<cmd>Rg<CR>')   -- Search in all files
 
 
 
@@ -177,3 +193,37 @@ map('n', '<space>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
 map('n', '<space>m', '<cmd>lua vim.lsp.buf.rename()<CR>')
 map('n', '<space>r', '<cmd>lua vim.lsp.buf.references()<CR>')
 map('n', '<space>s', '<cmd>lua vim.lsp.buf.document_symbol()<CR>')
+
+cmd "map f <Plug>Sneak_s"
+cmd "map F <Plug>Sneak_S"
+
+cmd "command! -nargs=0 Prettier :CocCommand prettier.formatFile"
+
+map('n', '<silent>gd', t'<Plug>(coc-definition)')
+map('n', '<silent>grn', t'<Plug>(coc-rename)')
+
+-- cmd "nmap <silent> gd <Plug>(coc-definition)"
+-- cmd "nmap <silent> grn <Plug>(coc-rename)"
+
+-- Copy to clipboard
+map('v', '<leader>y', '"+y', {noremap = true})
+map('n', '<leader>Y', '"+yg_', {noremap = true})
+map('n', '<leader>y', '"+y', {noremap = true})
+map('n', '<leader>yy', '"+yy', {noremap = true})
+
+-- Paste from clipboard
+map('n', '<leader>p', '"+p', {noremap = true})
+map('n', '<leader>P', '"+P', {noremap = true})
+map('v', '<leader>p', '"+p', {noremap = true})
+map('v', '<leader>P', '"+P', {noremap = true})
+
+-- File tree
+map('n', '<leader>pt', "<cmd>NERDTreeToggle<CR>")
+
+-- Git
+map('n', '<leader>gs', "<cmd>G<CR>")
+map('n', '<leader>gp', "<cmd>G push<CR>")
+map('n', '<leader>gb', "<cmd>Merginal<CR>")
+
+-- Reload config
+map('n', '<leader>hr', '<cmd>source $MYVIMRC<CR>')

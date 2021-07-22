@@ -48,9 +48,11 @@ alias gdf='(cd $HOME/.dotfiles && git add . && git commit -m Update && git push)
 alias e="${EDITOR}"
 alias edf='edit_dots README.md'
 alias ebr='edit_dots brew/Brewfile'
+alias ehs='edit_dots hammerspoon/init.lua'
 alias erc='edit_dots zsh/zsh.sh && rezsh'
 alias einit='edit_dots neovim/init.lua'
 alias tm='tmux new-session -s ide || tmux attach-session -t ide'
+alias ls='exa --tree --level=1 --icons'
 
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix nvm)/nvm.sh

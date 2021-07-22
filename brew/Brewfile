@@ -98,6 +98,26 @@ brew "tesseract"
 # Fuzzy Finder, used in Neovim
 brew "fzf"
 
+# File manager
+brew "ranger"
+
+# Text based web browser
+brew "lynx"
+
+# Better ls
+brew "exa"
+
+# Financial tracker
+brew "hledger"
+
+# Use github from CLI
+brew "hub"
+
+# Terminal Spotify client
+brew "spotify-tui"
+
+# Spotify Daemon for streaming music
+brew "spotifyd"
 
 
 ##################
